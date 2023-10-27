@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .navbar-default {
+        border-color: rgb(48, 48, 48);
+        border-radius: 0px;
+        }
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            background-color: rgb(58, 58, 58);
+            color: rgb(210, 210, 210);
+        }
+        .navbar-default .navbar-nav > li > a,
+        .navbar-default .navbar-brand {
+        color: rgb(200, 200, 200);
+        }
+        .no-link-navbar-brand {
+        cursor: default;
+        pointer-events: none;
+        }
+        h1,h2,h3,h4,h5.h6,p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(200, 200, 200);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(113, 165, 159);">
+    <nav class="navbar navbar-default" style="background-color: rgb(48, 48, 48);">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">My Portfolio Website</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <center><h1 style="margin-top: 20px;">Portfolio Website</h1></center>
+    <center><h3>This website was created for a HCI assignment using bootstrap.</h3></center>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
